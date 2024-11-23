@@ -423,8 +423,15 @@ class DeviceVectorize(_BaseUFuncBuilder):
 
 
 class DeviceGUFuncVectorize(_BaseUFuncBuilder):
-    def __init__(self, func, sig, identity=None, cache=False, targetoptions=None,
-                 writable_args=()):
+    def __init__(
+        self,
+        func,
+        sig,
+        identity=None,
+        cache=False,
+        targetoptions=None,
+        writable_args=(),
+    ):
         if targetoptions is None:
             targetoptions = {}
         if cache:
