@@ -12,7 +12,6 @@ from numba.core.analysis import (
     compute_use_defs,
     find_top_level_loops,
 )
-from numba.core.utils import PYVERSION
 
 _logger = logging.getLogger(__name__)
 
